@@ -26,32 +26,14 @@ Usage
 Upon opening the application, users are presented with the home page as per the Figma design.
 Users can connect their wallet by clicking on the appropriate button and following the prompts provided by the WalletConnect tool.
 Explore different sections of the application and interact with various components to experience the animations and interactions.
-Folder Structure
-css
-Copy code
-/src
-│
-├── components
-│   ├── Header.jsx
-│   ├── Footer.jsx
-│   └── ...
-│
-├── pages
-│   ├── Home.jsx
-│   ├── About.jsx
-│   └── ...
-│
-├── styles
-│   ├── global.css
-│   ├── components.css
-│   └── ...
-│
-└── App.jsx
-Contributing
+
+
+
+## Contributing
 We welcome contributions from developers of all skill levels. Whether it's fixing a bug, implementing a new feature, or improving documentation, your contributions are highly valued. To contribute, simply fork the repository, make your changes, and submit a pull request.
 
-Author: Kulsoom Rasheed
-Connect with Us
+# Author: Kulsoom Rasheed
+## Connect with Us
 Acknowledgments We extend our gratitude to the open-source community for their invaluable contributions. Special thanks to all the Matrix Labs team for providing us with this opportunity. We greatly appreciate your valuable feedback. 🙏
 
 
