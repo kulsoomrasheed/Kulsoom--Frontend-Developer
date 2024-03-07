@@ -6,10 +6,15 @@ This project is a web application developed based on a provided Figma design. Th
 
 ## Features
 Exact replication of the design provided in Figma.
+
 Wallet connection functionality using WalletConnect.
+
 Smooth animations and interactions.
+
 Responsive design for various screen sizes.
+
 High code quality with effective use of React hooks and component hierarchy.
+
 
 ## Tools & Technologies
 React
