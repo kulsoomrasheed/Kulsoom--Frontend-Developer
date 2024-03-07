@@ -1,6 +1,7 @@
 import { Box, Heading, Image } from "@chakra-ui/react";
 import React from "react";
 import { Grid, GridItem } from "@chakra-ui/react";
+
 const Roadmap = () => {
   return (
     <Box
@@ -36,16 +37,44 @@ const Roadmap = () => {
             templateColumns={{ base: "repeat(2, 1fr)", md: "repeat(4, 1fr)" }}
             gap={12}
           >
-            <GridItem>
+            <GridItem sx={{
+              "@keyframes glow": {
+                "0%": { boxShadow: "0px 0px 10px rgba(237, 1, 55, 0.5)" },
+                "50%": { boxShadow: "0px 0px 20px rgba(237, 1, 55, 1)" },
+                "100%": { boxShadow: "0px 0px 10px rgba(237, 1, 55, 0.5)" }
+              },
+              animation: "glow 2s infinite"
+            }}>
               <Image src="Link.png" maxW="100%" maxH="100%" />
             </GridItem>
-            <GridItem>
+            <GridItem sx={{
+              "@keyframes glow": {
+                "0%": { boxShadow: "0px 0px 10px rgba(237, 1, 55, 0.5)" },
+                "50%": { boxShadow: "0px 0px 20px rgba(237, 1, 55, 1)" },
+                "100%": { boxShadow: "0px 0px 10px rgba(237, 1, 55, 0.5)" }
+              },
+              animation: "glow 2s infinite"
+            }}>
               <Image src="Link.png" maxW="100%" maxH="100%" />
             </GridItem>
-            <GridItem>
+            <GridItem sx={{
+              "@keyframes glow": {
+                "0%": { boxShadow: "0px 0px 10px rgba(237, 1, 55, 0.5)" },
+                "50%": { boxShadow: "0px 0px 20px rgba(237, 1, 55, 1)" },
+                "100%": { boxShadow: "0px 0px 10px rgba(237, 1, 55, 0.5)" }
+              },
+              animation: "glow 2s infinite"
+            }}>
               <Image src="Link.png" maxW="100%" maxH="100%" />
             </GridItem>
-            <GridItem>
+            <GridItem sx={{
+              "@keyframes glow": {
+                "0%": { boxShadow: "0px 0px 10px rgba(237, 1, 55, 0.5)" },
+                "50%": { boxShadow: "0px 0px 20px rgba(237, 1, 55, 1)" },
+                "100%": { boxShadow: "0px 0px 10px rgba(237, 1, 55, 0.5)" }
+              },
+              animation: "glow 2s infinite"
+            }}>
               <Image src="Link.png" maxW="100%" maxH="100%" />
             </GridItem>
           </Grid>

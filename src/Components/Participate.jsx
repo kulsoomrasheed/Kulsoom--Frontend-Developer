@@ -119,7 +119,7 @@ const Participate = () => {
               color={'white'} 
               border={'1.5px solid rgba(237, 1, 55, 1)'} 
               padding={3}  
-              borderRadius={'1.3rem'} letterSpacing={2} alignItems={'center'} alignContent={'center'} justifyContent={'space-between'} my={5} mt={15}  marginRight={45}
+              borderRadius={'1.3rem'} letterSpacing={2} alignItems={'center'} alignContent={'center'} justifyContent={'space-between'} my={5} mt={15}  marginRight={45}animation='horizontalAnimation 2s ease-in-out infinite'
             >
 <Heading
  fontFamily="shojumaru"

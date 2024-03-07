@@ -11,7 +11,7 @@ const Faq = () => {
       templateColumns={{ base: 'repeat(1, 1fr)', md: 'repeat(2, 1fr)' }}
       gap={6}
     >
-      <GridItem ml={{ base: 0, md: 15 }} justifyContent={'center'} m={'auto'}>
+      <GridItem ml={{ base: 0, md: 15 }} justifyContent={'center'} m={'auto'} animation='verticalAnimation 2s ease-in-out infinite' >
         <Image src='image 1.png' />
       </GridItem>
       <GridItem>

@@ -47,8 +47,8 @@ const Intro = () => {
               mt={1} borderRadius={16}>Documents <ChevronDownIcon/></Button>
         </Box>
         <Box display="flex" justifyContent="center"order={{ base: '1', md: '2' }}
-          marginBottom={{ base: '2rem', md: 0 }} >  
-          <Image maxH="45.75rem" maxW="45.75rem" src="intro.png" />
+          marginBottom={{ base: '2rem', md: 0 }} animation='verticalAnimation 2s ease-in-out infinite'>  
+          <Image  maxH="45.75rem" maxW="45.75rem" src="intro.png" />
         </Box>
       </Flex>
     </Box>

@@ -43,6 +43,31 @@
 
   background-color: rgb(211,59,52) !important;
           color:white !important;
-         
+         width: fit-content !important;
           
+}
+
+@keyframes verticalAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+@keyframes horizontalAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }

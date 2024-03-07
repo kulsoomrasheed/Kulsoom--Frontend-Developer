@@ -6,11 +6,16 @@ import Token from '../Components/Token'
 import Roadmap from '../Components/Roadmap'
 import Faq from '../Components/Faq'
 import Footer from '../Components/Footer'
+import Hambg from '../Components/Hambg'
+import HeroSmall from '../Components/HeroSmall'
 
 const Home = () => {
   return (
     <div>
         <Hero/>
+        <Hambg/>
+        <HeroSmall/>
+
         <Intro/>
         <Participate/>
         <Token/>
