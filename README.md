@@ -18,8 +18,11 @@ High code quality with effective use of React hooks and component hierarchy.
 
 ## Tools & Technologies
 React
+
 WalletConnect
+
 keyframes (for animations)
+
 
 ## Setup Instructions
 Clone the repository: git clone <repository-url>
