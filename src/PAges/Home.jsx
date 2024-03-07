@@ -2,6 +2,7 @@ import React from 'react'
 import Hero from '../Components/Hero'
 import Intro from '../Components/Intro'
 import Participate from '../Components/Participate'
+import Token from '../Components/Token'
 
 const Home = () => {
   return (
@@ -9,6 +10,7 @@ const Home = () => {
         <Hero/>
         <Intro/>
         <Participate/>
+        <Token/>
     </div>
   )
 }

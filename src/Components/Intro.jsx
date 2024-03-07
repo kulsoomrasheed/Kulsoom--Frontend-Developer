@@ -42,9 +42,8 @@ const Intro = () => {
             join us to save the future! Our mission is to empower everyone to
             share wealth and succeed. read more...
           </Text>
-          <Button bgColor="rgb(237,1,55)" textAlign={"left"} size="lg">
-            Join Us
-          </Button>
+          <Button size={'sm'} bgColor={'rgba(237, 1, 55, 1)'} color={'white'}   fontFamily="ZCOOL KuaiLe"
+              mt={1} borderRadius={16}>Documents</Button>
         </Box>
         <Box display="flex" justifyContent="center"order={{ base: '1', md: '2' }}
           marginBottom={{ base: '2rem', md: 0 }} >  

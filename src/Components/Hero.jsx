@@ -8,14 +8,14 @@ const Hero = () => {
     <Flex gap={10} justifyContent={"space-evenly"} margin={'auto'} p={5}>
     <Flex>
         <Image src='Logo.png'></Image>
-        <Heading mt={5} > Saviour</Heading>
+        <Heading mt={5} fontFamily="ZCOOL KuaiLe"> Saviour</Heading>
       </Flex>
-      <Flex justifyContent={"space-evenly"} gap={10} mt={7}>
+      <Flex fontFamily="ZCOOL KuaiLe" justifyContent={"space-evenly"} gap={10} mt={7} border={"1px solid black"} h={'2.5rem'} borderRadius={16} pt={1} p={2} bgColor={'black'} px={5}>
         <Text>Home</Text>
-        <Text>Home</Text>
-        <Text>Home</Text>
-        <Text>Home</Text>
-        <Text>Home</Text>
+        <Text>IDO</Text>
+        <Text>Tokenomics</Text>
+        <Text>Roadmaps</Text>
+        <Text>Coming Soon</Text>
 
       </Flex>
       <Box mt={7}>
