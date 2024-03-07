@@ -1,6 +1,7 @@
 import { Box, Flex, Heading, Image, Stack, Text } from '@chakra-ui/react'
 import { ConnectButton } from '@rainbow-me/rainbowkit'
 import React from 'react'
+import {ChevronDownIcon} from '@chakra-ui/icons'
  //// 
 const Hero = () => {
   return (
@@ -15,10 +16,10 @@ const Hero = () => {
         <Text>IDO</Text>
         <Text>Tokenomics</Text>
         <Text>Roadmaps</Text>
-        <Text>Coming Soon</Text>
+        <Text>Coming Soon <ChevronDownIcon/></Text>
 
       </Flex>
-      <Box mt={7}>
+      <Box mt={7} className='connect'>
       <ConnectButton/>
       </Box>
     </Flex>

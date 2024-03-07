@@ -39,3 +39,10 @@
     transform: rotate(360deg);
   }
 }
+.connect button{
+
+  background-color: rgb(211,59,52) !important;
+          color:white !important;
+         
+          
+}

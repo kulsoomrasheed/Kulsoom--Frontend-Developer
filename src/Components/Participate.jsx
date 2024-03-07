@@ -38,7 +38,8 @@ const Participate = () => {
           position={'absolute'} 
           top={'10rem'} 
           left={'9.4rem'} 
-          display={'flex'} gap={3}
+          display={'grid'}           gridTemplateColumns={{ base: 'repeat(1, 1fr)', md: 'repeat(2, 1fr)' }}
+           gap={3}
         >
           <Box>
             <Text
@@ -118,7 +119,7 @@ const Participate = () => {
               color={'white'} 
               border={'1.5px solid rgba(237, 1, 55, 1)'} 
               padding={3}  
-              borderRadius={'1.3rem'} letterSpacing={2} alignItems={'center'} alignContent={'center'} justifyContent={'space-between'} my={5} mt={15}
+              borderRadius={'1.3rem'} letterSpacing={2} alignItems={'center'} alignContent={'center'} justifyContent={'space-between'} my={5} mt={15}  marginRight={45}
             >
 <Heading
  fontFamily="shojumaru"

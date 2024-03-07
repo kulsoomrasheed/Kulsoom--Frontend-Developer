@@ -1,5 +1,6 @@
 import { Box, Flex, Heading, Image, Text, Button } from "@chakra-ui/react";
 import React from "react";
+import {ChevronDownIcon} from '@chakra-ui/icons'
 
 const Intro = () => {
   return (
@@ -43,7 +44,7 @@ const Intro = () => {
             share wealth and succeed. read more...
           </Text>
           <Button size={'sm'} bgColor={'rgba(237, 1, 55, 1)'} color={'white'}   fontFamily="ZCOOL KuaiLe"
-              mt={1} borderRadius={16}>Documents</Button>
+              mt={1} borderRadius={16}>Documents <ChevronDownIcon/></Button>
         </Box>
         <Box display="flex" justifyContent="center"order={{ base: '1', md: '2' }}
           marginBottom={{ base: '2rem', md: 0 }} >  
