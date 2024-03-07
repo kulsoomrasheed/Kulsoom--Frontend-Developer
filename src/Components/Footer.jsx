@@ -13,7 +13,7 @@ const Footer = () => {
       p={5}
     >
       <Image width={'8%'} src='Frame 1790.png' />
-      <Heading>SITEMAP</Heading>
+      <Heading size={'md'} color={'rgba(237, 1, 55, 1)'}>SITEMAP</Heading>
       <Flex direction="row" gap={5}>
         <div>Home</div>
         <div>IDO</div>
