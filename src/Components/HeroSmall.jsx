@@ -19,7 +19,7 @@ const HeroSmall = () => {
         lg: 'none', 
       }}
     >
-      <Stack border={"2px solid black"} bgColor={"black"}>
+      <Stack  w={'85%'} m={'auto'} justifyContent={'center'}textAlign={'center'}alignItems={'center'} alignContent={'center'}>
         <Heading
           fontFamily={"shojumaru"}
           w={"21rem"}
@@ -28,8 +28,7 @@ const HeroSmall = () => {
           fontSize={"2.8rem"}
           lineHeight={"3.3rem"}
           textAlign={"center"}
-          top={"11.5rem"}
-          left={"1.8rem"}
+          top={"6.5rem"}
           position={"absolute"}
           animation="verticalAnimation 2s ease-in-out infinite"
         >

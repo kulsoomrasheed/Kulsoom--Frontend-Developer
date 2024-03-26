@@ -22,7 +22,6 @@ const Hero = () => {
         <Flex>
           <Image src="Logo.png"></Image>
           <Heading mt={5} fontFamily="ZCOOL KuaiLe">
-            {" "}
             Saviour
           </Heading>
         </Flex>

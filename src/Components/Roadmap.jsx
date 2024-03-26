@@ -11,15 +11,14 @@ const Roadmap = () => {
       bgSize="cover"
       bgPosition="center"
       opacity={"95%"}
-      h={{ base: "auto", md: "50.2rem" }}
+      h={{ base: "auto", md: "auto",lg:"50.2rem" }}
       scale={"crop"}
     >
       <Box
         textAlign="center"
-        marginRight={{ base: 0, md: "2rem" }}
+        marginRight={{ base: 0, md:0,lg: "2rem" }}
         padding={10}
         pl={{ base: 0, md: 10 }}
-        order={{ base: "2", md: "1" }}
       >
         <Heading
           fontFamily="shojumaru"
@@ -32,10 +31,10 @@ const Roadmap = () => {
         >
           Road Map
         </Heading>
-        <Box display="flex" justifyContent="center" alignItems="center">
+        <Box display="flex" justifyContent="center" alignItems="center" alignContent={'center'} m={'auto'}>
           <Grid
-            templateColumns={{ base: "repeat(2, 1fr)", md: "repeat(4, 1fr)" }}
-            gap={12}
+            templateColumns={{ base: "repeat(2, 1fr)", md: "repeat(2, 1fr)",  lg: "repeat(4, 1fr)",}}
+            gap={16}
           >
             <GridItem sx={{
               "@keyframes glow": {

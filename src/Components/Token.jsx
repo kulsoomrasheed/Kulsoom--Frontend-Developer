@@ -1,25 +1,27 @@
 import React from 'react'
-import { Box, Stack, Heading, Text, Button, Image, Td, Table, Thead, Tr, Tbody, Input, Flex } from '@chakra-ui/react'
+import { Box, Stack, Heading, Text, Button, Image, td, table, Thead, tr, tbody, Input, Flex, Center } from '@chakra-ui/react'
 
 const Token = () => {
   return (
     <Box
-      position={'relative'}
-      bg={"black"}
-      bgImage={'url("token.png")'}
-      bgSize="cover" 
-      bgPosition="center" 
-      opacity={'95%'} 
-      h={{ base: 'auto', md: '40.2rem' }}
-      scale={'crop'}
+  
+    position={'relative'}
+    bg={"black"}
+    bgImage={'url("token.png")'}
+    bgSize="cover" 
+    bgPosition="center" 
+    opacity={'95%'} 
+    h={{ base: 'auto', md: '40.2rem' }}
+    w={'100%'}
+    scale={'crop'} 
+    textAlign="center"
+    marginRight={{ base: 0, md: '2rem' }}
+    padding={10}
+    pl={{ base: 0, md: 10 }}
     >
-      <Box
-        textAlign="center"
-        marginRight={{ base: 0, md: '2rem' }}
-        padding={10}
-        pl={{ base: 0, md: 10 }}
-        order={{ base: '2', md: '1' }}
-      >
+      
+    
+       
 
 <Heading  p={10}
             fontFamily="shojumaru"
@@ -29,54 +31,106 @@ const Token = () => {
             color="rgba(237, 1, 55, 1)"
             marginBottom="1rem"
           >Tokenomics</Heading>
+ <Center gap={2} margin={'auto'} display={'flex'} flexDirection={{base:"column",md:"column",lg:"row"}} justifyContent={'center'} p={15} alignContent={'center'} alignItems={"center"} w={'85%'}>
+  <Box
+  fontFamily="ZCOOL KuaiLe"
+  justifyContent={'center'}
+  textAlign={"center"}
+  alignItems={"center"}
+  fontWeight={400} 
+  margin={'auto'}
+  w={'22rem'} 
+  h={'15.2rem'} 
 
-          <Box display={'grid'}           gridTemplateColumns={{ base: 'repeat(1, 1fr)', md: 'repeat(2, 1fr)' }}
-gap={10} m={'auto'} justifyContent={'center'} p={15}>
-            <Flex>
-            <Box 
-              fontFamily="ZCOOL KuaiLe"
-              fontWeight={400} 
-              m={'auto'}
-              w={'25rem'} 
-              h={'21rem'} 
-              color={'white'} 
-              border={'1.5px solid rgba(237, 1, 55, 1)'} 
-              padding={3} 
-              ml={16} 
-              borderRadius={'1.3rem'}
-            >
-              <Table m={'auto'} alignItems={'center' } mt={10}>
-  <Tbody>
-    <Tr>
-      <Td width="50%">Total Token Supply</Td>
-      <Td color={'rgba(237, 1, 55, 1)'} width="50%">20%</Td>
-    </Tr>
-    <Tr>
-      <Td width="50%">Soft Cap</Td>
-      <Td width="50%"color={'rgba(237, 1, 55, 1)'} >200 BNB</Td>
-    </Tr>
-    <Tr>
-      <Td width="50%">Initial exchange rate</Td>
-      <Td width="50%"color={'rgba(237, 1, 55, 1)'} >1 BNB</Td>
-    </Tr>
-  </Tbody>
-</Table>
+  color={'white'} 
+  border={'1.5px solid rgba(237, 1, 55, 1)'} 
+  borderRadius={'1.3rem'}
+  display="flex"
+  flexDirection="column"
+>
+<Text bgColor={"rgba(237, 1, 55, 1)"} position={'absolute'} borderRadius={'1rem'}top={{base:"12rem",md:"16rem",lg:'13.5rem'}} p={3}>Token Details</Text>
 
-           
-              </Box>
-            </Flex>
-            <Flex>
-            <Box display="flex"justifyContent="center"order={{ base: '1', md: '2' }}
+  <table  style={{ margin:"auto", textAlign:"center"}}>
+    <tbody>
+      <tr>
+        <td style={{ width: "50%",padding:5 }}>Name</td>
+        <td style={{ width: "50%", color: "rgba(237, 1, 55, 1)",padding:5 }}>Saviour</td>
+      </tr>
+      <tr>
+        <td style={{ width: "50",padding:5 }}>Symbol</td>
+        <td style={{ width: "50%", color: "rgba(237, 1, 55, 1)",padding:5 }}>SVR</td>
+      </tr>
+      <tr>
+        <td style={{ width: "50%" ,padding:5}}>Total Supply</td>
+        <td style={{ width: "50%", color: "rgba(237, 1, 55, 1)",padding:5 }}>1000 Trillion </td>
+      </tr>
+      <tr>
+        <td style={{ width: "50%",padding:5 }}>Decimals</td>
+        <td style={{ width: "50%", color: "rgba(237, 1, 55, 1)",padding:5 }}>18</td>
+      </tr>
+    </tbody>
+  </table>
+</Box>
+
+<Box  justifyContent="center" mt={6}
           marginBottom={{ base: '2rem', md: 0 }} >  
-          <Image maxH="45.75rem" maxW="45.75rem" src="frame 1824.png" />
+          <Image maxH={{base:'15rem',md:'70%',lg:"45.75rem"}} maxW={{base:'16rem',md:'70%',lg:"45.75rem"}}src="frame 1824.png" m={'auto'}/>
         </Box>
-
-            </Flex>
-
-          </Box>
-        </Box>
+  </Center>
+ 
+       
         </Box>
   )
 }
 
 export default Token
+
+/*  
+<Flex>
+<Box display={'flex'}           gridTemplateColumns={{ base: 'repeat(1, 1fr)', md: 'repeat(2, 1fr)' }}
+gap={10} margin={'auto'} justifyContent={'center'} p={15} alignContent={'center'} alignItems={"center"}>
+            <Flex>
+            <Box
+  fontFamily="ZCOOL KuaiLe"
+  justifyContent={'center'}
+  textAlign={"center"}
+  alignItems={"center"}
+  fontWeight={400} 
+  margin={'auto'}
+  w={'22rem'} 
+  h={'15.2rem'} 
+
+  color={'white'} 
+  border={'1.5px solid rgba(237, 1, 55, 1)'} 
+  borderRadius={'1.3rem'}
+  display="flex"
+  flexDirection="column"
+>
+  <table  style={{ margin:"auto", textAlign:"center" }}>
+    <tbody>
+      <tr>
+        <td style={{ width: "50%",padding:5 }}>Name</td>
+        <td style={{ width: "50%", color: "rgba(237, 1, 55, 1)",padding:5 }}>Saviour</td>
+      </tr>
+      <tr>
+        <td style={{ width: "50",padding:5 }}>Symbol</td>
+        <td style={{ width: "50%", color: "rgba(237, 1, 55, 1)",padding:5 }}>SVR</td>
+      </tr>
+      <tr>
+        <td style={{ width: "50%" ,padding:5}}>Total Supply</td>
+        <td style={{ width: "50%", color: "rgba(237, 1, 55, 1)",padding:5 }}>1000 Trillion </td>
+      </tr>
+      <tr>
+        <td style={{ width: "50%",padding:5 }}>Decimals</td>
+        <td style={{ width: "50%", color: "rgba(237, 1, 55, 1)",padding:5 }}>18</td>
+      </tr>
+    </tbody>
+  </table>
+</Box>
+
+<Box display="flex"justifyContent="center"order={{ base: '1', md: '2' }}
+          marginBottom={{ base: '2rem', md: 0 }} >  
+          <Image maxH="45.75rem" maxW="45.75rem" src="frame 1824.png" />
+        </Box>
+</Flex>
+  */

@@ -10,21 +10,22 @@ const Intro = () => {
         justifyContent="center"
         bgColor="black"
         padding={5}
+        
         color="white"
-        direction={{ base: 'column', md: 'row' }} 
+        direction={{ base: 'column',md:"column", lg: 'row' ,}} 
         minHeight={{ base: 'auto', md: '45.75rem' }} 
       >
-        <Box textAlign="center" 
-          marginRight={{ base: 0, md: '2rem' }} 
-          pl={{ base: 0, md: 10 }}
-          order={{ base: '2', md: '1' }} >
+        <Box
+      m={'auto'}
+          textAlign={{base:"center", md:"center",lg:"left"}}
+          justifyContent={{base:"center", md:"center",lg:"left"}}>
           <Heading
             fontFamily="shojumaru"
             fontWeight={400}
             fontSize="2.7rem"
             lineHeight="3.2rem"
             color="rgba(237, 1, 55, 1)"
-            marginBottom="1rem"
+            marginBottom="1rem"  textAlign={{base:"center", md:"center",lg:"left"}}
           >
             Introduction
           </Heading>
@@ -34,21 +35,32 @@ const Intro = () => {
             fontSize="1.5rem"
             lineHeight="1.8rem"
             color="white"
-            maxW="35rem"
+            maxW="35rem" 
             marginBottom="2rem"
           >
             We've all been in the mud once, and now we've decided to fight it
-            out. Pay tribute to those pioneers of WEB3 and the warriors who
+            out. <br /> Pay tribute to those pioneers of WEB3 and the warriors who
             dedicated their love to the blockchain. Save the lucky ones alive,
-            join us to save the future! Our mission is to empower everyone to
+            join us to save the future! <br /> Our mission is to empower everyone to
             share wealth and succeed. read more...
           </Text>
-          <Button size={'sm'} bgColor={'rgba(237, 1, 55, 1)'} color={'white'}   fontFamily="ZCOOL KuaiLe"
-              mt={1} borderRadius={16}>Documents <ChevronDownIcon/></Button>
+          <Button
+          alignContent={'left'}
+      size="md"
+      textAlign="left"
+      justifyContent="left"
+      bgGradient="linear(to-r, rgba(237, 1, 55, 1), rgb(235, 96, 23))"
+      color="white"
+      fontFamily="ZCOOL KuaiLe"
+      mt={1}
+      borderRadius={16}
+    >
+      Documents <ChevronDownIcon />
+    </Button>
         </Box>
         <Box display="flex" justifyContent="center"order={{ base: '1', md: '2' }}
           marginBottom={{ base: '2rem', md: 0 }} animation='verticalAnimation 2s ease-in-out infinite'>  
-          <Image  maxH="45.75rem" maxW="45.75rem" src="intro.png" />
+          <Image  w={"100%"} src="intro.png" />
         </Box>
       </Flex>
     </Box>

@@ -8,10 +8,10 @@ import Faq from '../Components/Faq'
 import Footer from '../Components/Footer'
 import Hambg from '../Components/Hambg'
 import HeroSmall from '../Components/HeroSmall'
-
+import {Box} from '@chakra-ui/react'
 const Home = () => {
   return (
-    <div>
+    <Box w={"100%"} m={'auto'}>
         <Hero/>
         <Hambg/>
         <HeroSmall/>
@@ -22,7 +22,7 @@ const Home = () => {
         <Roadmap/>
         <Faq/>
         <Footer/>
-    </div>
+    </Box>
   )
 }
 
